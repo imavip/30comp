@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!-- d3 -->
+        <script src="https://d3js.org/d3.v4.js"></script>
+
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        
+         <!-- http://getbootstrap.com/ -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <script src="{{ url_for('static', filename='stocks.js') }}"></script>
+        
+        <!-- app's own CSS -->
+        <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet"/>
+        
+        <title> 30 Companies</title>
+    </head>
+    <body>
+        <h1>The $10,000 Dream</h1>
+        <div id="graphcontainer">
+        <p id="chart"></p>    
+        </div>
+        
+    </body>
+    
+</html>
